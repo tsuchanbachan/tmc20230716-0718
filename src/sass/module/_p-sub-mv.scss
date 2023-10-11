@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.p-sub-mv {
+    /* メインビュ（410）ー＋ヘッダー高さ（60の場合） */
+    height: rem(410) + rem(60);
+    position: relative;
+    //     height: 100vh;
+    // background-image: url(../images/common/sample-mv-sm.png);
+    background-image: url(../images/common/sub-mv-pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // text-align: center;
+
+    @include mq(md) {
+        /* メインビュー（410）＋ヘッダー高さ（80の場合） */
+        // height: rem(410) + rem(80);
+    }
+}
+.p-sub-mv::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* 半透明のフィルター */
+    // background-color: rgba(0,36,28,0.7);
+    background-color: rgba(0,0,0,0.7);
+}
+.sub-mv__title {
+padding-top: rem(172) + rem(60);
+color: $white;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+    @include mq(md) {
+        padding-top: rem(145) + rem(80);
+    }
+}

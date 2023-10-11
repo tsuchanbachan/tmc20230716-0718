@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+/* 「.p-home-business」と同じ内容 */
+
+.p-home-about {}
+
+.p-home-about__contents {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(60);
+    }
+}
+
+/* 背景画像 */
+/* １つ目（代表） */
+.p-home-about__content:first-of-type .p-back-img-card {
+    background-image: url(../images/common/top-hello.jpg);
+}
+
+/* ２つ目（地図） */
+.p-home-about__content:last-of-type .p-back-img-card {
+    background-image: url(../images/common/top-office2.jpg);
+}
+
+.p-home-about__content:last-of-type {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
+
+.p-home-about__btn {
+    text-align: center;
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}

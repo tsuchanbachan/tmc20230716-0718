@@ -1,0 +1,35 @@
+@use 'global' as *;
+
+.p-business-list {
+    letter-spacing: 0.1em;
+    margin-left: rem(20);
+    margin-top: rem(30);
+
+    @include mq(md) {
+        margin-left: rem(50);
+        margin-top: rem(20);
+    }
+}
+
+.p-business-list__items {
+}
+
+.p-business-list__item {
+    line-height: 2;
+    position: relative;
+    padding-left: rem(18);
+}
+
+.p-business-list__item::before {
+    content: '−';
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.p-business-list__item:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}

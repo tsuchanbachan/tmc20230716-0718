@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.signature-self {
+  font-size: rem(18);
+}
+
+.signature-name {
+  margin-top: rem(5);
+  text-align: right;
+}
+
+.signature-name span {
+  margin-right: 2em;
+}

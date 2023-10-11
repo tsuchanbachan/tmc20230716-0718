@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.l-page-about-outline {
+  margin-top: rem(130);
+}
+
+.p-about-outline__data {
+  /* 72から、の何か30で、差引42 */
+  margin-top: rem(42);
+}

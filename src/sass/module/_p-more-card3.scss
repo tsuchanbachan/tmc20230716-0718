@@ -1,0 +1,82 @@
+@use 'global' as *;
+
+/* PC時に3枚のカード */
+
+.p-more-card3 {
+    position: relative;
+// overflow: hidden;
+    @include mq(md) {
+        /* 横幅400/1100=36.363636 */
+        width: 30%;
+    }
+}
+
+/* 「.p-more-card3」hover時に「p-back-img-card（背景画像）」を操作 */
+.p-more-card3:hover .p-back-img-card {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    /* overflow:hidden、かけたいがうまくいかず */
+}
+/* 「.p-more-card3」hover時に「p-back-img-card」の「擬似要素」を操作 */
+.p-more-card3:hover .p-back-img-card::before {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease;
+
+}
+
+
+.p-more-card3__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 5%;
+    
+    /* moreを最下に。
+    参照：https: //www.tipdip.jp/tips_posts/production/2213/ */
+    /* .p-more-card-moreのmargin-top: auto;とセット */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.p-more-card3__title {
+    font-size: rem(20);
+    text-align: center;
+    font-weight: $bold;
+}
+
+.p-more-card3__sub {
+    margin-top: rem(30);
+}
+
+.p-more-card3__more {
+    font-size: rem(20);
+    text-align: right;
+    color: $green;
+    font-weight: $bold;
+    position: relative;
+    padding-right: rem(20);
+
+    // bottom: 0;
+    /* テキストを底辺につける違うやり方したい！ */
+    /* ネットで見つけたやり方 */
+    margin-top: auto;
+}
+
+/* 「more」あとの矢印 */
+.p-more-card3__more::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* 右端から */
+    right: 0;
+    width: 6px;
+    height: 6px;
+    // margin-top: -2px;
+    border-top: solid 2px $green;
+    border-right: solid 2px $green;
+    transform: rotate(45deg);
+}

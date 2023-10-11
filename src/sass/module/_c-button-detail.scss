@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+/* ------------
+詳細ボタン（小）事業案内で使用
+-------------*/
+.p-small__btn-detail {
+    margin-top: 30px;
+}
+
+.c-button-detail {
+    display: inline-block;
+    color: $white;
+    /* 幅は、widthではなく、inline-blockとpaddingで決める */
+    padding: 0 rem(35)+rem(12) 0 rem(35);
+    text-decoration: none;
+    line-height: 2;
+
+    letter-spacing: 0.05em;
+    border-radius: rem(5);
+    background-color: $black;
+
+    position: relative;
+}
+
+.c-button-detail::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: rem(25);
+    width: rem(6);
+    height: rem(6);
+    margin-top: -2px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+}
+
+.c-button-detail:hover {
+    /* 透過 */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}

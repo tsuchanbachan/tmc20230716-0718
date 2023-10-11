@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+/* 成約実績 */
+.p-business-achievements {
+  margin-top: rem(50);
+  padding: rem(10) rem(30);
+  line-height: 2;
+  background-color: $gray-thin;
+
+}

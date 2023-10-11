@@ -1,0 +1,73 @@
+@use 'global' as *;
+
+.p-form {
+  margin-top: rem(130);
+
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.p-form__item {
+
+}
+
+.p-form__item:not(:first-of-type) {
+  margin-top: rem(70);
+}
+
+.p-form__item dt {
+  font-weight: $bold;
+}
+
+/* 必須 */
+.p-form__required {
+  background-color: $green;
+  color: $white;
+  font-size: rem(12);
+  line-height: 1;
+  padding: rem(3) rem(11);
+  border-radius: rem(5);
+  margin-left: rem(10);
+  font-weight: $normal;
+}
+
+.p-form__radio,
+.p-form__check {
+  margin-top: rem(10);
+  display: flex;
+  flex-direction: column;
+  gap: rem(5);
+
+  @include mq(md) {
+    display: block;
+    gap: rem(1);
+  }
+}
+
+.p-form__check a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.p-form__btn {
+  margin-top: rem(60);
+  text-align: center;
+  
+}
+
+.p-form__btn:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+.p-form__btn input[submit] {
+  cursor: default;
+}
+
+/* 送信完了後のメッセージ */
+.p-end-message {
+  display: none;
+}
+.p-false-message {
+  display: none;
+}

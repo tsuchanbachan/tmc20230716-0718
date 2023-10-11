@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+/* 下層１事業案内ートップーセクション１サービス方針 */
+.p-page-business-top-direction {
+
+}
+
+.p-page-business-top-direction__inner {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-page-business-top-direction__contents {
+    @include mq(md) {
+        /* 480/1100 */
+        width: 43.636363%; 
+    }
+
+}
+.p-page-business-top-direction__content {
+    margin-top: rem(40);
+}
+.p-page-business-top-direction__lead {
+    font-size: rem(22);
+}
+
+.p-page-business-top-direction__text {
+    margin-top: rem(22);
+    line-height: 1.75;
+}
+
+.p-page-business-top-direction__img {
+    margin-top: rem(40);
+
+        @include mq(md) {
+            /* 550/1100 */
+            width: 50%;
+
+            margin-top: 0;
+    }
+}

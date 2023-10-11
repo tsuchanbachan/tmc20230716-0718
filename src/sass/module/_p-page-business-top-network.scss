@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+/* ====
+下層１事業案内ートップーセクション５提携先等
+==== */
+.l-page-business-top-network {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}
+
+.p-page-business-top-network__wrap {
+    margin-left: rem(20);
+}
+
+.p-page-business-top-network__table {
+
+}
+
+.p-page-business-top-network__table-row:not(:first-of-type) {
+    margin-top: rem(50);
+}
+
+.p-page-business-top-network__table-row {
+
+}
+
+.p-page-business-top-network__table-row a:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.p-page-business-top-network__table-dt {
+    margin-bottom: rem(12);
+}
+
+.p-page-business-top-network__table-row dd {
+}

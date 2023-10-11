@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+/* 下層・セクションヘッダー */
+.p-section-header-lower {
+    color: $black;
+    padding-bottom: rem(30);
+}
+
+.p-section-header-lower__title {
+    font-size: rem(24);
+    line-height: 1;
+    letter-spacing: 0.01em;
+    font-weight: $bold;
+    position: relative;
+    
+    /* テキスト左に16pxの余白
+    left:0なので、縦棒左端までが16 */
+    padding-left: rem(16);
+
+    @include mq(md) {
+        font-size: rem(32);
+        padding-left: rem(28);
+    }
+
+}
+
+.p-section-header-lower__title::before {
+    /* 太さ6pxの縦棒*/
+    width: rem(6);
+    /* 縦棒の左端は、インナーのラインにくっつく */
+    left: 0;
+    /* つまり、縦棒と文字間は、10pxってこと */
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-radius: rem(5);
+    background-color: green;
+}

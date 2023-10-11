@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.p-business-title {
+    line-height: 2;
+    h3 {
+        font-size: rem(16);
+        font-weight: normal;
+    }
+
+}

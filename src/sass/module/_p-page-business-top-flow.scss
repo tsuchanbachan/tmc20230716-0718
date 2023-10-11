@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+/* ====
+下層１事業案内ートップーセクション４料金
+==== */
+.l-page-business-top-flow {
+    margin-top: rem(100);
+    
+        @include mq(sm) {
+            margin-top: rem(140);
+        }
+}
+
+.p-page-business-top-flow {
+
+}
+
+.p-page-business-top-flow__title {
+}
+
+.p-page-business-top-flow__wrapper {
+
+}
+
+.p-page-business-top-flow__contents {
+    @include mq(md) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+
+.p-page-business-top-flow__content {
+
+    @include mq(md) {
+        /* 190/1100 */
+        width: 17.272727%;
+    }
+}
+
+.p-page-business-top-flow__content:not(:first-of-type) {
+    margin-top: rem(70);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.p-page-business-top-flow__content-img {
+    
+}
+
+.p-page-business-top-flow__content-title {
+    line-height: 2;
+    margin-top: rem(10);
+
+}
+
+.p-page-business-top-flow__content-text {
+    font-size: rem(14);
+    /* 24/14 */
+    line-height: 1.714285;
+    margin-top: rem(5);
+
+}

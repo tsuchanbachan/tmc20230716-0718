@@ -1,0 +1,47 @@
+@use 'global' as *;
+
+.p-section-header-top {
+    text-align: center;
+    color: $black;
+}
+
+.p-section-header-top__ja-title {
+    font-size: rem(28);
+    line-height: 1;
+    letter-spacing: 0.1em;
+    font-weight: $bold;
+    position: relative;
+    display: inline-block;
+    /* テキスト下端から下線下端（太さ2）が14。つまり隙間は12 */
+    padding-bottom: rem(14);
+    
+    @include mq(md) {
+        font-size: rem(32);
+        /* テキスト下端から下線下端（太さ2）が24。つまり隙間は22 */
+        padding-bottom: rem(24);
+        
+    }
+}
+
+.p-section-header-top__ja-title::after {
+    content: '';
+    position: absolute;
+    width: rem(40);
+    height: rem(2);
+    background-color: $green;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem(0);
+}
+
+.p-section-header-top__en-title {
+    font-size: rem(12);
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-top: rem(10);
+    font-family: $font-english;
+    
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}

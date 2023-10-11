@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="robots" content="noindex" /> -->
+    <!-- meta情報 -->
+    <title>経営支援サービスについて</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../assets/images/common/favicon.ico">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 英語（Montserrat） -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 日本語（NotoSans） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css（swiper） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- js（swiper） -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- ========
+    ヘッダー・ハンバーガー
+    ========= -->
+    <header class="l-header p-header" id="js-header">
+        <div class="p-header__inner">
+            <div class="p-header__logo">
+                <a href="/index.html" class="p-header__logoLink"><img src="../assets/images/common/logo-company.png"
+                        alt="田原マネジメントコンサルティング"></a>
+            </div>
+
+            <!-- ハンバーガーボタン -->
+            <div class="p-header__drawer c-hamburger js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div><!-- /.header__drawer -->
+
+            <!-- PC版のナビ -->
+            <nav class="p-header__pc-nav pc-nav">
+                <ul class="pc-nav__items">
+                    <li class="pc-nav__item">
+                        <a href="/index.html"><span>ホーム</span></a>
+                    </li>
+
+                    <!-- トグルメニュー -->
+                    <li class="pc-nav__item nav-toggle">
+                        <a href="/page-business.html"><span class="active">事業案内</span></a>
+                        <ul class="nav-toggle__items">
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-succession.html">事業承継支援</a></li>
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-ma.html">事業承継（M&A）</a></li>
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a active" href="/page-business-management.html">経営支援</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="pc-nav__item">
+                        <a href="/page-about.html"><span>事務所について</span></a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="/archive-home-news.html"><span>お知らせ</span></a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="/page-contact.html"><span>お問合せ</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- スマホ用ナビ -->
+            <nav class="p-header__sp-nav sp-nav js-sp-nav">
+                <ul class="sp-nav__items">
+                    <li class="sp-nav__item">
+                        <a href="/index.html">ホーム</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business.html">事業案内</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business-succession.html">事業案内（事業承継）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business-ma.html">事業案内（M&A）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="#">事業案内（経営支援）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-about.html">事務所について</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/archive-home-news.html">お知らせ</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-contact.html">お問合せ</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-privacy.html">個人情報保護方針</a>
+                    </li>
+                </ul><!-- /.sp-nav__items -->
+            
+            </nav><!-- /.p-header__sp-nav -->
+
+        </div><!-- /.header__inner -->
+    </header>
+
+
+    <main>
+
+
+        <!-- ================
+        下層１事業内容ー経営支援
+        ================= -->
+
+        <!-- ======
+        メインビュー
+        ======= -->
+        <!-- 下層ページのメインビュー -->
+        <div class="p-sub-mv">
+            <!-- 下層・ページヘッダー -->
+            <div class="sub-mv__title p-lower-header-title">
+                <!-- トップページのセクションヘッダーとは似ているが共通してない -->
+                <h1 class="p-lower-header-title__ja-title">事業案内</h1>
+                <div class="p-lower-header-title__ja-sub">〜経営支援〜</div>
+                <div class="p-lower-header-title__en-title">business</div>
+            </div><!-- /.sub-mv__title -->
+        </div><!-- /.p-sub-mv -->
+
+        <!-- パンくず -->
+        <div class="c-breadcrumb">
+            <div class="l-inner">
+                <a href="/index.html" class="c-breadcrumb-home"><span>HOME</span></a>
+                <!-- <span>></span> -->
+                <a href="/page-business.html" class="c-breadcrumb-low"><span>事業案内</span></a>
+                <a href="#" class="c-breadcrumb-low"><span>経営支援サービス</span></a>
+            </div>
+        </div><!-- /.p-bread-crumb -->
+
+        <!-- <div class="l-inner"> -->
+
+        <!-- ====
+        目次？
+        ===== -->
+        <section class="l-page-business-management-head p-page-business-management-head">
+            <div class="p-page-business-management-head__inner l-inner">
+
+                <!-- タイトル -->
+                <div class="p-page-business-management-head__lead p-business-lead">経営支援サービス</div>
+
+                <div class="p-business-lead-under">
+                    <!-- 事業別リスト -->
+                    <div class="p-page-business-management-head__list p-business-list">
+                        <ul class="p-business-list__items">
+                            <li class="p-business-list__item"><a href="#p-business-contents__items-plan">経営計画の立案支援</a></li>
+                            <li class="p-business-list__item"><a href="#p-business-contents__items-adviser">経営顧問サービス</a></li>
+                            <li class="p-business-list__item"><a href="#p-business-contents__items-spot">新規事業立上げや資金調達に関する計画立案支援</a></li>
+                            <li class="p-business-list__item"><a href="#p-business-contents__items-director">社外取締役・社外経営企画室</a></li>
+                        </ul>
+                    </div><!-- /.p-business-list -->
+                    
+                    <!-- イラスト -->
+                    <div class="p-business-lead-under__img p-card__contain-img">
+                        <img src="../assets/images/common/top-business2.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- 頭文 -->
+                <div class="l-page-business-management-head__text p-page-business-management-head__text c-text">
+                    <p>経営計画は企業の健全な成長にとってなくてはならないものであると考えております。</p>
+                    <p>弊社でご提供するサービスは、経営計画をベースとした未来への羅針盤づくりが基本です。経営計画に基づいた年ごと、月ごとの予算管理、そして実態と計画とのギャップを分析を行うことによって見えてくる課題の抽出と解決のための行動計画策定などです。</p>
+                    <p>本来ならば、社内で完結できれば良いのですが、自社内で行おうとするとどうしても甘えが出るもの。第三者が介在することによって、客観的な視点が加わって視点が広がります。</p>
+                    <p>お客様の立場に立った目線を保ちつつ、第三者の目として時に厳しく、経営をサポートします。</p>
+                    <p>以下のサービスで経営を支援します。</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ====
+        セクション１・経営支援サービスのメニュー
+        ===== -->
+        <section class="l-page-business-management-service p-page-business-management-service p-business-contents">
+            <div class="p-business-contents__inner l-minimum-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">経営支援サービスのメニュー</h2>
+                </div>
+
+                <!-- ====
+                h3①・経営計画立案
+                ===== -->
+                <div class="p-business-contents__items direct" id="p-business-contents__items-plan">
+
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-inner p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">経営計画の立案支援</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            経営計画の立案支援を行っております。
+                            <ul>
+                                <li>・単年度計画</li>
+                                <li>・中期５ヶ年計画  等</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3②・経営顧問サービス
+                ===== -->
+                <div class="p-business-contents__items" id="p-business-contents__items-adviser">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">経営顧問サービス</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            <p>経営顧問サービスは、経営計画に基づいた毎月の予算管理についてのサポートを行うサービスです。</p>
+                            <p>PCDAサイクルの確立を目指します。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3③・金融支援
+                ===== -->
+                <div class="p-business-contents__items" id="p-business-contents__items-spot">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">新規事業立上げや金融支援に関する計画立案支援</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            <p>新規事業の立上げ時の事業計画書の作成、また企業の再建計画等における金融支援についての計画立案などのご相談をお受けしています。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3④・社外取締役・社外経営企画室
+                ===== -->
+                <div class="p-business-contents__items" id="p-business-contents__items-director">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">社外取締役・社外経営企画室</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            <p>社外取締役として、また社外の経営企画室として、社内人材が不足している場合の社長の参謀役となります。</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div><!-- /.l-page-business-ma-flow__pre -->
+
+
+            <!-- </div> -->
+
+        </section>
+
+        <!-- ====
+        セクション２・経営支援サービス料金
+        ===== -->
+        <section class="l-page-business-management-price p-page-business-management-price p-page-business-ma__content">
+            <div class="p-business-contents__inner l-minimum-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">経営支援サービス料金</h2>
+                </div>
+
+                <!-- ====
+                h3①・経営計画の立案支援
+                ===== -->
+                <div class="p-business-contents__items direct">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">経営計画の立案支援</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            200千円／回（税別）〜
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3②・経営顧問サービス
+                ===== -->
+                <div class="p-business-contents__items">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">経営顧問サービス</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            <p>月額100千円（税別。1年契約）</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3③・新規事業立上げや金融支援に関する計画立案支援
+                ===== -->
+                <div class="p-business-contents__items">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">新規事業立上げや金融支援に関する計画立案支援</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text">
+                            <p>200千円／回（税別）〜</p>
+                        </div>
+                        <div class="p-business-contents__items-introduction c-text-indent">
+                            <p>※内容によって変動します。個別にご提案させていただきます。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====
+                h3④・社外取締役・社外経営企画室
+                ===== -->
+                <div class="p-business-contents__items">
+                    <!-- 下層・h3セクションヘッダー -->
+                    <div class="p-business-contents__items-title p-section-header-h3">
+                        <h3 class="p-section-header-h3__title">社外取締役・社外経営企画室</h3>
+                    </div>
+
+                    <div class="p-business-contents__items-inner">
+                        <div class="p-business-contents__items-introduction c-text-indent">
+                            <p>※内容によって変動します。個別にご提案させていただきます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.l-page-business-ma-flow__pre -->
+
+            <!-- </div> -->
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- 下層・セクションヘッダー -->
+        <!-- <div class="p-section-header-lower">
+            <h2 class="p-section-header-lower__title">事務所について</h2>
+        </div> -->
+
+        <!-- 下層・h3タイトル -->
+        <!-- <div class="p-section-header-h3">
+            <h3 class="p-section-header-h3__title">経営計画の立案支援</h3>
+        </div> -->
+
+        <!--  to-top（上向き矢印）  -->
+        <a class="c-to-top" id="to-top4" href="#">
+            <div class="c-to-top__arrow"></div>
+        </a>
+
+        <!-- </div> -->
+    </main>
+
+
+    <!-- ========
+    フッター
+    ========= -->
+    <footer class="l-footer p-footer">
+
+        <div class="p-footer__inner l-inner">
+
+            <!-- 会社情報 -->
+            <div class="p-footer__about p-footer-about">
+                <div class="p-footer__name">
+                    <a href="/index.html" class="p-footer__name-a">
+                        <div class="p-footer__name-logo">
+                            <img src="../assets/images/common/logo-only.png" alt="会社ロゴ">
+                        </div><!-- /.p-footer__name-logo -->
+                    </a>
+
+                    <div class="p-footer__name-company">田原マネジメントコンサルティング</div>
+                    <div class="p-footer__name-director">
+                        <span>代表</span>田原 公生
+                    </div>
+
+                </div><!-- /.p-footer__name -->
+
+                <div class="p-footer__address">
+                    <p>〒806-0055</p>
+                    <p>北九州市八幡西区幸神4丁目7-10</p>
+                </div><!-- /.p-footer__address -->
+                <div class="p-footer__sale">
+                    <div class="p-footer__sale-content">
+                        <p>営業時間</p>
+                        <p>月〜金 → 9:00〜17:00</p>
+                    </div><!-- /.p-footer__sale-content -->
+                    <div class="p-footer__sale-contact">
+                        <a href="/page-contact.html"><img src="../assets/images/common/logo-mail-black.png" alt=""></a>
+                        <div class="p-footer__sale-contact-text">お問合わせする</div>
+                    </div><!-- /.p-footer__sale-contact -->
+                </div><!-- /.p-footer__sale -->
+
+            </div><!-- /.p-footer__about -->
+
+            <!-- フッターナビ -->
+            <nav class="p-footer__nav p-footer-nav">
+
+                <ul class="p-footer-nav__items">
+
+                    <!-- １つ目（事業案内） -->
+                    <li class="p-footer-nav__item"><a href="/page-business.html" class="footer-nav-icon-square">事業案内</a>
+                        <ul class="p-footer-nav__item-smalls">
+
+                            <li class="p-footer-nav__item-small">
+                                <a href="/page-business-succession.html" class="footer-nav-icon-line">事業承継支援</a>
+                                <ul>
+                                    <li><a href="/page-business-ma.html" class="footer-nav-icon-point">事業承継支援（M&A）</a></li>
+                                </ul>
+                            </li><!-- /.p-footer-nav__item-small -->
+
+                            <li class="p-footer-nav__item-small">
+                                <a href="/page-business-management.html" class="footer-nav-icon-line">経営支援</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- ２つ目（事務所について） -->
+                    <li class="p-footer-nav__item"><a href="/page-about.html" class="footer-nav-icon-square">事務所について</a>
+                        <ul>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-hello"
+                                    class="footer-nav-icon-line">代表者紹介</a></li>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#p-page-about-outline"
+                                    class="footer-nav-icon-line">事務所概要</a></li>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-access"
+                                    class="footer-nav-icon-line">アクセス</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ３つ目以降 -->
+                    <li class="p-footer-nav__item">
+                        <ul>
+                            <li class="p-footer-nav__item"><a href="/archive-home-news.html"
+                                    class="footer-nav-icon-square">お知らせ</a></li>
+                            <li class="p-footer-nav__item"><a href="/page-contact.html"
+                                    class="footer-nav-icon-square">お問合せ</a></li>
+                            <li class="p-footer-nav__item"><a href="/page-privacy.html"
+                                    class="footer-nav-icon-square">個人情報保護方針</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav><!-- /.p-footer--nav -->
+
+
+        </div><!-- /.p-footer__inner -->
+
+        <div class="p-footer__copyright">
+            <small>&copy; 2023 Tahara Management Consulting</small>
+        </div><!-- /.p-footer__copyright -->
+
+    </footer>
+</body>
+
+</html>

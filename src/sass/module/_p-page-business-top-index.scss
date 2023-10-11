@@ -1,0 +1,82 @@
+@use 'global' as *;
+
+/* ====
+下層１事業案内ートップーセクション２サービス内容
+==== */
+.l-page-business-top-index {
+    margin-top: rem(100);
+    
+        @include mq(md) {
+            margin-top: rem(140);
+        }
+}
+
+.p-page-business-top-index__inner {
+
+}
+
+.p-page-business-top-index__title {
+
+}
+.p-page-business-top-index__wrapper {
+
+    @include mq(md) {
+        max-width: rem(900);
+        margin: 0 auto;
+    }
+}
+
+.p-page-business-top-index__contents {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* １つのリスト（タイトル含む塊） */
+.p-page-business-top-index__content {
+    
+    @include mq(md) {
+        /* 390/900 */
+        width: 43.33333%;
+    }
+}
+
+.p-page-business-top-index__content:first-of-type {
+    padding-bottom: rem(60);
+    border-bottom: solid rem(1) $black;
+
+    @include mq(md) {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+.p-page-business-top-index__content:last-of-type {
+    padding-top: rem(60);
+
+    @include mq(md) {
+        padding-top: 0;
+    }
+}
+
+/* タイトル */
+.p-page-business-top-index__content-title {
+
+    @include mq(md) {
+        padding-bottom: rem(14);
+        border-bottom: solid rem(1) $black;
+    }
+}
+
+/* タイトル含まないリスト部分だけ */
+.p-page-business-top-index__content-list {
+    margin-top: rem(10);
+    margin-left: rem(33);
+}
+
+/* ボタン */
+.p-page-business-top-index__button {
+    margin-top: rem(30);
+    text-align: center;
+}
+

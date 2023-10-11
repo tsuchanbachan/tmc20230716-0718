@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.p-page-business-ma__comment {
+    background-color: #eee;
+    border-radius: rem(3);
+    font-size: rem(12);
+    padding: rem(10);
+    margin-top: rem(40);
+}
+
+.p-page-business-ma__comment-a {
+    margin-left: rem(20);
+}
+
+.p-page-business-ma__comment-a-wrapper {
+    background-color: $white;
+    padding: rem(10);
+    margin-top: rem(10);
+}
+
+.p-page-business-ma__comment-a-wrapper dl {
+    padding-left: rem(10);
+}
+.p-page-business-ma__comment-a dd {
+    margin-left: rem(20);
+}

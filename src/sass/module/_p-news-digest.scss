@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.p-news-digest {
+
+}
+
+.p-news-digest__link:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.p-news-digest__flex {
+    display: flex;
+}
+
+.p-news-digest__time {
+    font-size: rem(14);
+
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.p-news-digest__genre {
+    font-size: rem(14);
+    font-family: $font-english;
+    // line-height: 1.214;
+    margin-left: rem(20);
+    
+    background-color: $black;
+    color: $white;
+    padding: 0 rem(6);
+    border-radius: rem(2);
+}
+
+.p-news-digest__text {
+    font-size: rem(16);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    margin-top: rem(6);
+}

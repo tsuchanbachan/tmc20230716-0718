@@ -1,0 +1,146 @@
+@use 'global' as *;
+
+.p-page-privacy {
+
+}
+
+.p-privacy__inner {
+
+}
+
+.p-privacy__item {
+
+}
+
+// .p-privacy__item:first-of-type {
+//   margin-top: rem(30);
+// }
+
+.p-privacy__item + .p-privacy__item {
+  margin-top: rem(80);
+}
+
+.p-privacy__item-title {
+
+}
+
+.p-privacy__item-inner {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(35);
+  }
+}
+
+.p-privacy__wrapper {
+  margin-top: rem(20);
+}
+
+.p-privacy__item-inner ol {
+  margin-top: rem(30);
+}
+
+.p-privacy__item-text {
+  /* 30/14 */
+  line-height: 2;
+  font-size: rem(14);
+}
+
+.p-privacy__item-text li {
+  /* 箇条書きの字下げ */
+  margin-left: 2em;
+  text-indent: -1em;
+}
+
+.p-privacy__item-text li:not(:first-of-type) {
+  margin-top: rem(10);
+}
+
+/* 「4.個人情報の取り扱い」の中身の箇条書き */
+.p-privacy__item-inner4 + .p-privacy__item-inner4 {
+  margin-top: rem(30);
+}
+/* 「4.個人情報の取り扱い」の中身のテキスト部分 */
+.p-privacy__item-inner4 .p-privacy__item-text{
+  margin-top: rem(10);
+}
+
+/* 個人情報のフッター */
+.p-privacy__footer {
+  background-color: $gray-thin;
+  border-radius: rem(5);
+  margin-top: rem(50);
+  padding: rem(20) rem(5);
+
+  @include mq(md) {
+    padding: rem(30);
+  }
+}
+
+/* 相談窓口 */
+.p-privacy__contact {
+}
+
+.p-privacy__contact dl:nth-of-type(2) {
+  margin-top: rem(20);
+
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.p-privacy__contact dd {
+  margin-left: rem(15);
+}
+
+.p-privacy__contact a {
+  color: blue;
+  border-bottom: solid 1px blue;
+}
+
+.p-privacy__contact a:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+/* 署名 */
+.p-privacy__sign {
+  margin-top: rem(60);
+}
+
+.p-privacy__sign-date {
+  
+}
+
+.p-privacy__sign-date dl {
+  display: flex;
+
+  @include mq(md) {
+  }
+}
+
+.p-privacy__sign-date dd {
+  margin-left: rem(15);
+}
+
+.p-privacy__sign-self {
+  margin-top: rem(20);
+  @include mq(md) {
+    max-width: rem(300);
+    width: 100%;
+    margin-left: auto;
+  }
+
+}
+
+.p-privacy__sign-company {
+
+}
+
+.p-privacy__sign-name {
+  text-align: right;
+}
+
+.p-privacy__sign-name span {
+  margin-right: rem(20);
+}

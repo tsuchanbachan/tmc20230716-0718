@@ -1,0 +1,55 @@
+@use 'global' as *;
+
+.c-hamburger {
+    position: relative;
+    width: rem(30);
+    height: rem(30);
+    cursor: pointer;
+
+    /* ドロワーメニューの上に乗っかる。
+    .p-headerはz-index:1000に。 */
+    z-index: 100;
+}
+
+.c-hamburger span {
+    position: absolute;
+    width: inherit;
+    height: rem(2);
+    // background-color: $black;
+    transition: 0.3s;
+}
+
+/* 通常 */
+.c-hamburger span:nth-child(1) {
+    top: 15%;
+    background-color: $black;
+}
+
+.c-hamburger span:nth-child(2) {
+    top: 51%;
+    opacity: 1;
+    background-color: $black;
+}
+
+.c-hamburger span:nth-child(3) {
+    top: 85%;
+    background-color: $black;
+}
+
+/* クリック時 */
+.c-hamburger.is-active span:nth-child(1) {
+    top: 60%;
+    transform: rotate(45deg);
+    background-color: $white;
+}
+
+.c-hamburger.is-active span:nth-child(2) {
+    top: 51%;
+    opacity: 0;
+}
+
+.c-hamburger.is-active span:nth-child(3) {
+    top: 60%;
+    transform: rotate(-45deg);
+    background-color: $white;
+}

@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.c-breadcrumb {
+    padding-top: rem(24);
+    padding-bottom: rem(68);
+}
+
+.c-breadcrumb a:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.c-breadcrumb-low {
+    position: relative;
+    padding-left: rem(20);
+    margin-left: rem(11);
+}
+
+.c-breadcrumb-low::before {
+    content:'>';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+}

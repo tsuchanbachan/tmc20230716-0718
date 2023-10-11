@@ -1,0 +1,38 @@
+@use 'global' as *;
+
+/* ====================
+to-top
+<a class="c-to-top" id="to-top4" href="#">
+    <div class="c-to-top__arrow"></div>
+</a>
+==================== */
+.c-to-top {
+    height: rem(50);
+    width: rem(50);
+    position: fixed;
+    right: rem(30);
+    bottom: rem(40);
+    background: $white;
+    border: solid 2px $black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // z-index: 2;
+}
+
+.c-to-top:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+/* -----------
+中の矢印
+----------- */
+.c-to-top__arrow {
+    height: rem(10);
+    width: rem(10);
+    border-top: 3px solid $black;
+    border-right: 3px solid $black;
+    transform: translateY(20%) rotate(-45deg);
+}

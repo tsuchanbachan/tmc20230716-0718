@@ -1,0 +1,49 @@
+@use 'global' as *;
+
+.p-route {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 26px+228px+100px=354px 354/900=39.333333% */
+  // width: 39.33333%;
+  width: 100%;
+  @include mq(md) {
+  }
+
+}
+
+/* 交通機関を囲む正方形 */
+.p-route__transport {
+  width: rem(100);
+  // padding-top: 100%;
+  height: rem(100);
+  background-color: $gray-thin;
+
+  /* 縦横センタリングのために、flex指定 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-route__transport span {
+  display: block;
+}
+
+.p-route__time {
+  font-size: rem(14);
+
+  /* 正方形を100pxでしているのでマズい気がする */
+  /* 225/335=67.164179% */
+  // width: 67.164179%;
+
+  /* 正方形rem100と、余白に20 */
+  width: calc(100% - rem(120));
+}
+
+.p-route__time li {
+  padding-left: 1em;
+  text-indent: -1em;
+}

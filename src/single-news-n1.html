@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- <meta name="robots" content="noindex" /> -->
+  <!-- meta情報 -->
+  <title>事務所を開設しました！</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="../assets/images/common/favicon.ico">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 英語（Montserrat） -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- 日本語（NotoSans） -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- css（swiper） -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- js（swiper） -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+
+
+
+  <!-- ========
+  ヘッダー・ハンバーガー
+  ========= -->
+  <header class="l-header p-header" id="js-header">
+    <div class="p-header__inner">
+      <div class="p-header__logo">
+        <a href="/index.html" class="p-header__logoLink"><img src="../assets/images/common/logo-company.png"
+            alt="田原マネジメントコンサルティング"></a>
+      </div>
+
+      <!-- ハンバーガーボタン -->
+      <div class="p-header__drawer c-hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- /.header__drawer -->
+
+      <!-- PC版のナビ -->
+      <nav class="p-header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="/index.html"><span>ホーム</span></a>
+          </li>
+          
+          <!-- トグルメニュー -->
+          <li class="pc-nav__item nav-toggle">
+            <a href="/page-business.html">事業案内</a>
+            <ul class="nav-toggle__items">
+              <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-succession.html">事業承継支援</a></li>
+              <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-ma.html">事業承継（M&A）</a></li>
+              <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-management.html">経営支援</a></li>
+            </ul>
+          </li>
+
+          <li class="pc-nav__item">
+            <a href="/page-about.html"><span>事務所について</span></a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="/archive-home-news.html"><span class="active">お知らせ</span></a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="/page-contact.html"><span>お問合せ</span></a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- スマホ用ナビ -->
+      <nav class="p-header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item">
+            <a href="/index.html">ホーム</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-business.html">事業案内</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-business-succession.html">事業案内（事業承継）</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-business-ma.html">事業案内（M&A）</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-business-management.html">事業案内（経営支援）</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-about.html">事務所について</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/archive-home-news.html">お知らせ</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-contact.html">お問合せ</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="/page-privacy.html">個人情報保護方針</a>
+          </li>
+        </ul><!-- /.sp-nav__items -->
+      
+      </nav><!-- /.p-header__sp-nav -->
+
+    </div><!-- /.header__inner -->
+  </header>
+
+
+  <main>
+
+    <!-- ======
+    メインビュー
+    ======= -->
+    <!-- 下層ページのメインビュー -->
+    <div class="p-sub-mv">
+      <!-- 下層・ページヘッダー -->
+      <div class="sub-mv__title p-lower-header-title">
+        <h1 class="p-lower-header-title__ja-title">お知らせ</h1>
+        <div class="p-lower-header-title__en-title">news</div>
+      </div><!-- /.sub-mv__title -->
+    </div><!-- /.p-sub-mv -->
+
+    <!-- パンくず -->
+    <div class="c-breadcrumb">
+      <div class="l-inner">
+        <a href="/index.html" class="c-breadcrumb-home"><span>HOME</span></a>
+        <a href="/archive-home-news.html" class="c-breadcrumb-low"><span>お知らせ</span></a>
+        <a href="#" class="c-breadcrumb-low"><span>事務所を開設しました！</span></a>
+      </div>
+    </div><!-- /.p-bread-crumb -->
+
+    <!-- <div class="l-inner"> -->
+
+
+    <div class="l-single-news-body p-single-news-body">
+      <div class="p-single-news-body__inner l-minimum700-inner">
+
+
+        <div class="p-single-news-body__title p-section-header-lower">
+          <!-- 「single.php」では、記事タイトルがh1になる -->
+          <h1 class="p-section-header-lower__title">事務所を開設しました！</h1>
+        </div>
+
+        <!-- 時間とかタグとか。「home.html」から持ってきた -->
+        <div class="p-single-news-body__meta p-news-content">
+          <div class="p-news-content__meta">
+            <time datetimes="2023-07-01" class="p-news-content__date">2023.7.1</time>
+            <p class="p-news-content__category">お知らせ</p>
+          </div>
+        </div>
+
+    
+        <!-- アイキャッチ -->
+        <div class="p-single-news-body__image l-single-news-body__image">
+          <img src="../assets/images/common/top-mv1-person2-pc.jpg" alt="">
+        </div>
+    
+        <!-- ワードプレスでは、「content」という関数？をつけるところになるので、cssを当ててはいけない？？ -->
+        <div class="p-single-news-body__content">
+          <p class="p-single-news-body__content-text c-text">田原マネジメントコンサルティングの事務所を開設しました。</p>
+          <p class="p-single-news-body__content-text c-text">
+              住所は以下の通りとなっています。<br>
+                 〒806-0055<br>
+                 北九州市八幡西区幸神4丁目7-10 ルナビル204
+          </p>
+          <p class="p-single-news-body__content-text c-text">お近くにお越しの際には、どうぞお立ち寄りくださいませ。</p>
+          <p class="p-single-news-body__content-text c-text">
+            また、開設にあたっての想いは当サイトのご挨拶のページにも書いておりますので、ご一読いただけましたら幸いです。
+          </p>
+          <p class="p-single-news-body__content-text c-text">
+            こちらのお知らせには、最近の仕事の進捗や新たな展開などの記事を書いていければと考えています。
+          </p>
+        </div>
+
+        <!-- 画像2枚横並び -->
+        <div class="p-single-news-body__image p-single-news-2peace l-single-news-2peace">
+
+          <!-- 1枚目 -->
+          <div class="p-single-news-2peace__img p-card__img">
+            <img src="../assets/images/common/top-mv2-office2-pc.jpg" alt="">
+          </div>
+
+          <!-- 2枚目 -->
+          <div class="p-single-news-2peace__img p-card__img">
+            <img src="../assets/images/common/top-mv3-pc-office1.jpg" alt="">
+          </div>
+        </div>
+
+        <!-- ページャー -->
+        <div class="p-single-news-body__pager c-page-link">
+          <div class="c-page-link__inner">
+            <div class="c-page-link__flex">
+    
+              <div class="c-page-link__prev">
+                <a href="#"></a>
+              </div><!-- /.c-page-link__prev -->
+              <div class="c-page-link__next">
+                <a href="/single-news-n2.html">お盆休みのお知らせ</a>
+              </div><!-- /.c-page-link__next -->
+    
+            </div><!-- /.c-page-link__flex -->
+    
+            <!-- テキストで幅が可変するボタン -->
+            <div class="p-home-news__btn p-main__btn">
+              <a href="/archive-home-news.html" class="c-button">お知らせ一覧</a>
+            </div>
+
+          </div><!-- /.c-page-link__inner -->
+        </div><!-- /.c-page-link -->
+      </div><!-- /.p-single-body__inner -->
+    </div><!-- /.l-single-body -->
+
+
+    <!--  to-top（上向き矢印）  -->
+    <a class="c-to-top" id="to-top4" href="#">
+      <div class="c-to-top__arrow"></div>
+    </a>
+
+    <!-- </div> -->
+  </main>
+
+
+  <!-- ========
+  フッター
+  ========= -->
+  <footer class="l-footer p-footer">
+  
+    <div class="p-footer__inner l-inner">
+  
+      <!-- 会社情報 -->
+      <div class="p-footer__about p-footer-about">
+        <div class="p-footer__name">
+          <a href="/index.html" class="p-footer__name-a">
+            <div class="p-footer__name-logo">
+              <img src="../assets/images/common/logo-only.png" alt="会社ロゴ">
+            </div><!-- /.p-footer__name-logo -->
+          </a>
+  
+          <div class="p-footer__name-company">田原マネジメントコンサルティング</div>
+          <div class="p-footer__name-director">
+            <span>代表</span>田原 公生
+          </div>
+  
+        </div><!-- /.p-footer__name -->
+  
+        <div class="p-footer__address">
+          <p>〒806-0055</p>
+          <p>北九州市八幡西区幸神4丁目7-10</p>
+        </div><!-- /.p-footer__address -->
+        <div class="p-footer__sale">
+          <div class="p-footer__sale-content">
+            <p>営業時間</p>
+            <p>月〜金 → 9:00〜17:00</p>
+          </div><!-- /.p-footer__sale-content -->
+          <div class="p-footer__sale-contact">
+            <a href="/page-contact.html"><img src="../assets/images/common/logo-mail-black.png" alt=""></a>
+            <div class="p-footer__sale-contact-text">お問合わせする</div>
+          </div><!-- /.p-footer__sale-contact -->
+        </div><!-- /.p-footer__sale -->
+  
+      </div><!-- /.p-footer__about -->
+  
+      <!-- フッターナビ -->
+      <nav class="p-footer__nav p-footer-nav">
+  
+        <ul class="p-footer-nav__items">
+  
+          <!-- １つ目（事業案内） -->
+          <li class="p-footer-nav__item"><a href="/page-business.html" class="footer-nav-icon-square">事業案内</a>
+            <ul class="p-footer-nav__item-smalls">
+  
+              <li class="p-footer-nav__item-small">
+                <a href="/page-business-succession.html" class="footer-nav-icon-line">事業承継支援</a>
+                <ul>
+                  <li><a href="/page-business-ma.html" class="footer-nav-icon-point">事業承継支援（M&A）</a></li>
+                </ul>
+              </li><!-- /.p-footer-nav__item-small -->
+  
+              <li class="p-footer-nav__item-small">
+                <a href="/page-business-management.html" class="footer-nav-icon-line">経営支援</a>
+              </li>
+  
+            </ul>
+          </li>
+  
+          <!-- ２つ目（事務所について） -->
+          <li class="p-footer-nav__item"><a href="/page-about.html" class="footer-nav-icon-square">事務所について</a>
+            <ul>
+              <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-hello"
+                  class="footer-nav-icon-line">代表者紹介</a></li>
+              <li class="p-footer-nav__item-small"><a href="/page-about.html#p-page-about-outline"
+                  class="footer-nav-icon-line">事務所概要</a></li>
+              <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-access"
+                  class="footer-nav-icon-line">アクセス</a></li>
+            </ul>
+          </li>
+  
+          <!-- ３つ目以降 -->
+          <li class="p-footer-nav__item">
+            <ul>
+              <li class="p-footer-nav__item"><a href="/archive-home-news.html" class="footer-nav-icon-square">お知らせ</a>
+              </li>
+              <li class="p-footer-nav__item"><a href="/page-contact.html" class="footer-nav-icon-square">お問合せ</a></li>
+              <li class="p-footer-nav__item"><a href="/page-privacy.html" class="footer-nav-icon-square">個人情報保護方針</a></li>
+            </ul>
+          </li>
+  
+        </ul>
+      </nav><!-- /.p-footer--nav -->
+  
+  
+    </div><!-- /.p-footer__inner -->
+  
+    <div class="p-footer__copyright">
+      <small>&copy; 2023 Tahara Management Consulting</small>
+    </div><!-- /.p-footer__copyright -->
+  
+  </footer>
+</body>
+
+</html>

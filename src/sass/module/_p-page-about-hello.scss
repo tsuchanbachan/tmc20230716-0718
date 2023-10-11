@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+/* セクション（挨拶） */
+.p-page-about-hello {
+
+}
+
+.p-page-about-hello__inner {
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
+
+.p-page-about-hello__left {
+
+  @include mq(md) {
+    /* 480/1100=43.63636% */
+    width: 43.63636%;
+  }
+}
+
+.p-page-about-hello__title {
+
+}
+
+.p-page-about-hello__text {
+
+  @include mq(md) {
+    /* 128のうちタイトルのbottomで30 */
+    margin-top: rem(98);
+  }
+}
+
+.p-page-about-hello__text-body {
+
+  @include mq(md) {
+    line-height: 2;
+  }
+
+}
+
+.p-page-about-hello__text-motto {
+  margin-top: rem(36);
+}
+
+/* 署名 */
+.p-page-about-hello__text-signature {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(35);
+  }
+}
+
+/* ===========
+右側
+============ */
+.p-page-about-hello__right {
+  margin-top: rem(100);
+
+  @include mq(md) {
+    margin-top: 0;
+    /* 460/110=41.818181% */
+    width: 41.818181%;
+  }
+}
+
+.p-page-about-hello__img {
+
+}
+
+.p-page-about-hello__profile {
+  margin-top: rem(50);
+}
+
+/* 座右の名の写真部分 */
+.p-page-about-hello__motto {
+  text-align: center;
+}
+.p-page-about-hello__motto-text {
+  margin-top: rem(10);
+}

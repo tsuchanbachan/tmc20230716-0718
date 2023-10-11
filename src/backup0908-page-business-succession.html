@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="noindex" />
+    <!-- meta情報 -->
+    <title>事業承継について</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <!-- ファビコン -->
+    <link rel="icon" href="../assets/images/common/favicon.ico">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- 英語（Montserrat） -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 日本語（NotoSans） -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- css（swiper） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- js（swiper） -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- ========
+    ヘッダー・ハンバーガー
+    ========= -->
+    <header class="l-header p-header" id="js-header">
+        <div class="p-header__inner">
+            <div class="p-header__logo">
+                <a href="/index.html" class="p-header__logoLink"><img src="../assets/images/common/logo-company.png"
+                        alt="田原マネジメントコンサルティング"></a>
+            </div>
+
+            <!-- ハンバーガーボタン -->
+            <div class="p-header__drawer c-hamburger js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div><!-- /.header__drawer -->
+
+            <!-- PC版のナビ -->
+            <nav class="p-header__pc-nav pc-nav">
+                <ul class="pc-nav__items">
+                    <li class="pc-nav__item">
+                        <a href="/index.html"><span>ホーム</span></a>
+                    </li>
+
+                    <!-- トグルメニュー -->
+                    <li class="pc-nav__item nav-toggle">
+                        <a href="/page-business.html"><span class="active">事業案内</span></a>
+                        <ul class="nav-toggle__items">
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-succession.html">事業承継支援</a></li>
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-ma.html">事業承継（M&A）</a></li>
+                            <li class="nav-toggle__item"><a class="nav-toggle__item-a" href="/page-business-management.html">経営支援</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="pc-nav__item">
+                        <a href="/page-about.html"><span>事務所について</span></a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="/archive-home-news.html"><span>お知らせ</span></a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="/page-contact.html"><span>お問合せ</span></a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- スマホ用ナビ -->
+            <nav class="p-header__sp-nav sp-nav js-sp-nav">
+                <ul class="sp-nav__items">
+                    <li class="sp-nav__item">
+                        <a href="/index.html">ホーム</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business.html">事業案内</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="#">事業案内（事業承継）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business-ma.html">事業案内（M&A）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-business-management.html">事業案内（経営支援）</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-about.html">事務所について</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/archive-home-news.html">お知らせ</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-contact.html">お問合せ</a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="/page-privacy.html">個人情報保護方針</a>
+                    </li>
+                </ul><!-- /.sp-nav__items -->
+            
+            </nav><!-- /.p-header__sp-nav -->
+
+        </div><!-- /.header__inner -->
+    </header>
+
+
+    <main>
+
+
+        <!-- ================
+        下層１事業内容ー事業承継支援
+        ================= -->
+
+        <!-- ======
+        メインビュー
+        ======= -->
+        <!-- 下層ページのメインビュー -->
+        <div class="p-sub-mv">
+            <!-- 下層・ページヘッダー -->
+            <div class="sub-mv__title p-lower-header-title">
+                <!-- トップページのセクションヘッダーとは似ているが共通してない -->
+                <h1 class="p-lower-header-title__ja-title">事業案内</h1>
+                <div class="p-lower-header-title__ja-sub">〜事業承継支援〜</div>
+                <div class="p-lower-header-title__en-title">business</div>
+            </div><!-- /.sub-mv__title -->
+        </div><!-- /.p-sub-mv -->
+
+        <!-- パンくず -->
+        <div class="c-breadcrumb">
+            <div class="l-inner">
+                <a href="/index.html" class="c-breadcrumb-home"><span>HOME</span></a>
+                <a href="/page-business.html" class="c-breadcrumb-low"><span>事業案内</span></a>
+                <a href="#" class="c-breadcrumb-low"><span>事業承継支援</span></a>
+            </div>
+        </div><!-- /.p-bread-crumb -->
+
+        <!-- <div class="l-inner"> -->
+
+        <!-- ====
+        頭文
+        ===== -->
+        <section class="l-page-business-succession-head p-page-business-succession-head">
+            <div class="p-page-business-succession-head__inner l-inner">
+
+                <!-- タイトル -->
+                <div class="p-page-business-succession-head__lead p-business-lead">事業承継支援</div>
+
+                <!-- 事業別リスト -->
+                <div class="p-page-business-succession-head__list p-business-list">
+                    <ul class="p-business-list__items">
+                        <li class="p-business-list__item"><a href="#p-page-business-succession-friend">親族内承継、親族外承継</a></li>
+                        <li class="p-business-list__item"><a href="#p-page-business-succession-ma">M&A</a></li>
+                        <li class="p-business-list__item"><a href="#p-page-business-succession-ipo">上場支援</a></li>
+                    </ul>
+                </div><!-- /.p-business-list -->
+
+                <div class="p-page-business-succession-head__text c-text">
+                    <p>「中小企業」は、全企業数の9割以上、全雇用者数の7割以上を占めており、優れたノウハウを持つ中小企業も数多く存在しています。地域の雇用の場としても、また地域経済を支える場としても重要な存在です。</p>
+                    <p>しかし今後の10年間で、70歳を超える中小企業の経営者は約245万人となり、うち約半数の127万人（日本企業全体の約1/3）が後継者未定といわれており、その多くが廃業の危機を迎えています。</p>
+                    <p>そこで働く従業員のためにも、そこでサービスを受けられているお客様や取引先にとっても、企業を存続させることは必要不可欠であり、事業承継は大きな課題です。</p>
+                </div><!-- /.p-page-business-succession-head__text -->
+
+            </div>
+        </section>
+
+
+        <!-- ====
+        セクション・４つの選択肢
+        ===== -->
+        <section class="l-page-business-succession-four p-page-business-succession-four p-business-contents">
+            <!-- <div class="p-page-business-succession-four__inner l-inner"> -->
+            <div class="p-business-contents__inner l-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <!-- <div class="p-page-business-succession-four__title p-section-header-lower"> -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">事業承継の４つの選択肢</h2>
+                </div>
+
+                <div class="p-business-contents__text c-text">
+                    <p>事業承継には、大きく分けて4つの選択肢があります。</p>
+                    <p>後継者がいる場合の「親族内承継」と「親族外承継」、後継者がいない場合の「M&A」と「上場」です。</p>
+                    <p>大まかなメリット、デメリットについては下表にまとめましたので、ご確認ください。</p>
+                    <p>いずれの方法も、将来を見据えて、計画的に意思決定をしていくことが望ましいといえるでしょう。</p>
+                </div>
+    
+                <!-- 共通化しなくて良い？ -->
+                <!-- 表 -->
+                <div class="p-page-business-succession-four__chart">
+                    <table class="p-page-business-succession-four__chart-table p-business-table">
+                        <!-- 項目 -->
+                        <tr>
+                            <th class="p-business-table-column-title row1"></th>
+                            <th class="row2">メリット</th>
+                            <th class="row3">デメリット</th>
+                        </tr>
+    
+                        <!-- １つ目-親族内承継 -->
+                        <tr>
+                            <th class="row1">親族内<br class="u-desktop">承継</th>
+                            <td class="row2">
+                                <ol>
+                                    <li>①創業一家にとって、会社への影響力を継続できる</li>
+                                    <li>②内外の関係者から、心情的に受け入れられやすい</li>
+                                </ol>
+                            </td>
+                            <td class="row3">
+                                <ol>
+                                    <li>①後継者によっては、創業家の個人保証の解除が難しい場合もある</li>
+                                    <li>②承継する子・孫等に経営者の資質が不足している可能性がある</li>
+                                </ol>
+                            </td>
+                        </tr>
+    
+                        <!-- ２つ目-親族外承継 -->
+                        <tr>
+                            <th class="row1">親族外<br class="u-desktop">承継</th>
+                            <td class="row2">
+                                <ol>
+                                    <li>①承継するに足る実力があり、信頼できる人を登用できる</li>
+                                    <li>②内外の関係者から、心情的に受け入れられやすく、業務の引き継ぎを円滑に行うことができる</li>
+                                </ol>
+                            </td>
+                            <td class="row3">
+                                <ol>
+                                    <li>①後継者によっては、創業家の個人保証の解除が難しい場合もある</li>
+                                    <li>②後継者が、株式の取得資金の確保が困難な場合も多い</li>
+                                </ol>
+                            </td>
+                        </tr>
+    
+                        <!-- ３つ目-M&A -->
+                        <tr>
+                            <th class="row1">M&A</th>
+                            <td class="row2">
+                                <ol>
+                                    <li>①株式売却により多額の資金を得られる可能性がある</li>
+                                    <li>②創業家にとって、個人保証が解除される</li>
+                                    <li>③親族内・買収先との連携による成長が見込める</li>
+                                </ol>
+                            </td>
+                            <td class="row3">
+                                <ol>
+                                    <li>①創業家の会社への影響力がなくなる</li>
+                                    <li>②譲り受け先を探すために、時間とエネルギーが必要</li>
+                                    <li>③想定していた価格で譲渡できない場合もある</li>
+                                </ol>
+                            </td>
+                        </tr>
+    
+                        <!-- ４つ目-上場 -->
+                        <tr>
+                            <th class="row1">上場</th>
+                            <td class="row2">
+                                <ol>
+                                    <li>①株式売却により多額の資金を得られる</li>
+                                    <li>②優秀な人材の確保がしやすくなる</li>
+                                    <li>③銀行や得意先など対外信用力が増す</li>
+                                </ol>
+                            </td>
+                            <td class="row3">
+                                <ol>
+                                    <li>①経営の自由度が低くなる</li>
+                                    <li>②上場を目指した準備から上場までに数年かかり、その間のコストも必要となる</li>
+                                </ol>
+                            </td>
+                        </tr>
+    
+    
+                    </table>
+                </div><!-- /.p-page-business-succession-four__chart -->
+
+            </div>
+        </section>
+
+        <!-- ====
+        セクション・①親族内承継・親族外承継支援
+        ===== -->
+        <section class="l-page-business-succession-friend p-page-business-succession-friend p-business-contents" id="p-page-business-succession-friend">
+            <div class="p-business-contents__inner l-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">親族内承継・親族外承継支援</h2>
+                </div>
+
+                <div class="p-business-contents__text c-text">
+                    <p>事業承継を考える際に真っ先に検討されるのは、「親族内承継」「親族外承継」でしょう。事業をより魅力的な事業に育て、成長させていくことで、後継者が決定され、事業承継をスムーズに進めていくことができます。また、親族内承継や、社内承継の場合には、会社の理念や経営方針など、オーナー社長の事業に対する想いを踏まえた承継を期待することもできます。</p>
+                    <p>とはいえ、中小企業の株式（非上場株式）の評価額は高くなる傾向にあり、後継者が負担する相続税や贈与税の納税負担額が過大になるケースや、株式譲渡代金の資金調達が困難になるケースも多々あります。</p>
+                    <p>特に親族内承継の場合では相続や贈与にまつわる課題も多く、顧問税理士とも十分に協議しながら準備を進めることが必要です。</p>
+                    <p>また、親族内承継・親族外承継においては、承継相手が子どもや部下であるなど、目下の相手であることが多いものです。ともすると十分に相手の意思や考え方を確認しないままに社長の気持ちが先行してしまうこともあります。</p>
+                    <p>よく知っている間柄だと油断せずに、長期的な計画を持って準備を進めていきましょう。</p>
+                    <p>弊社においては、将来を見据えた経営計画策定の支援のサポートや、承継できる会社の組織づくりのための経営管理の手法、会議指導などの支援も行っております。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====
+        セクション・②M&A
+        ===== -->
+        <section class="l-page-business-succession-ma p-page-business-succession-ma p-business-contents" id="p-page-business-succession-ma">
+            <div class="p-business-contents__inner l-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">M&A</h2>
+                </div>
+
+                <div class="p-business-contents__text c-text">
+                    <p>ただし、企業の中には親族内承継も親族外承継も望めない場合や、または親族に苦労をかけたくない等の理由で、社長自身が承継を望まない場合もあります。そういった後継者が不在の場合や、後継者候補がいても検討の結果、「親族内承継」「親族外承継」ではなく「M&A」又は「上場」を検討するケースも増えています。</p>
+                    <p>中でも「M&A」については、適切な譲受先を探すという難しさはあるものの、成功した時の資金面でのメリットも大きく、多くの資金を得られる可能性もあります。また親族内承継や親族外承継と異なり、譲渡後の会社の経営面や資金面等についての不安から解放されるというメリットもあります。</p>
+                    <p>最近では、様々な理由から、M&Aを事業承継の一つとして検討される社長が多くなってきました。ただし、先ほども述べたように適切な譲受先を探すということが一番のハードルとなっています。</p>
+                    <p>地域密着型企業の中には、同じM&Aで会社を譲渡するにしても、やはり同じ地域で頑張っている、想いを共有できる方にお譲りしたいと考える方も多くいらっしゃいます。弊社においては、長年培ってきた地域の幅広いフットワークとネットワーク、そしてITを活用した全国規模のネットワークから、希望する譲受先を探すお手伝いをさせていただいております。</p>
+                    <p>M&Aの流れ、料金体系について詳しくはこちらをご覧ください。</p>
+                    <p><a href="/page-business-ma.html">→ M＆Aの流れについて詳しく見る</a></p>
+                </div>
+
+                <div class="p-business-contents__text p-business-achievements">
+                    <p>【成約実績】</p>
+                    <ul>
+                        <li>・建設業A社様（北九州市）→売上１億円、譲渡総額5,000万円、譲受先：同業（北九州市）</li>
+                        <li>・総合レジャー業B社様（福岡市）→売上3,000万円、譲渡総額2,000万円、譲受先：建設業（北九州市）</li>
+                    </ul>
+                </div><!-- /.p-business-contents__text -->
+            </div>
+        </section>
+
+        <!-- ====
+        セクション・③上場
+        ===== -->
+        <section class="l-page-business-succession-ipo p-page-business-succession-ipo p-business-contents" id="p-page-business-succession-ipo">
+            <div class="p-business-contents__inner l-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">上場</h2>
+                </div>
+
+                <div class="p-business-contents__text c-text">
+                    <p>また「上場」についても、ハードルは高いのですが、資金面はもちろんのこと、会社の成長性の面で大きなメリットがあります。</p>
+                    <p>近年では、東京プロマーケットなどの柔軟な上場基準を持った市場も開設され、中小企業においてもチャレンジしやすい環境となってきています。</p>
+                    <p>これまで育ててきた会社が、「上場」というステップアップした舞台で活躍でき、社会に対して更に大きな貢献をしていくことができることはこの上ない喜びです。<br>その後の人材確保や従業員のモチベーションという側面からも会社の成長にとって大きな力となることでしょう。</p>
+                    <p>弊社におきましては、弊社におきましては、IPOコンサルタントと連携の上、御社にとって最適な上場を実現できるようにご支援をさせていただきます。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====
+        セクション・④廃業
+        ===== -->
+        <section class="l-page-business-succession-close p-page-business-succession-close p-business-contents">
+            <div class="p-business-contents__inner l-inner">
+
+                <!-- 下層・セクションヘッダー -->
+                <div class="p-business-contents__title p-section-header-lower">
+                    <h2 class="p-section-header-lower__title">廃業</h2>
+                </div>
+
+                <div class="p-business-contents__text c-text">
+                    <p>これら4つの選択肢のいずれも困難な場合、「廃業」という選択肢もあります。</p>
+                    <p>「廃業」は、経営者が引退できるというメリットはありますが、事業の廃止による取引先への説明責任や従業員への説明責任・退職金支給、借入金が返済できない可能性もあります。</p>
+                    <p>上記の４つの方法同様に、自社の意思だけで容易に廃業できるわけではないため、充分な検討が必要です。</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- 下層・セクションヘッダー -->
+        <!-- <div class="p-section-header-lower">
+            <h2 class="p-section-header-lower__title">事務所について</h2>
+        </div> -->
+
+        <!-- 下層・h3タイトル -->
+        <!-- <div class="p-section-header-h3">
+            <h3 class="p-section-header-h3__title">経営計画の立案支援</h3>
+        </div> -->
+
+        <!--  to-top（上向き矢印）  -->
+        <a class="c-to-top" id="to-top4" href="#">
+            <div class="c-to-top__arrow"></div>
+        </a>
+
+        <!-- </div> -->
+    </main>
+
+
+    <!-- ========
+    フッター
+    ========= -->
+    <footer class="l-footer p-footer">
+
+        <div class="p-footer__inner l-inner">
+
+            <!-- 会社情報 -->
+            <div class="p-footer__about p-footer-about">
+                <div class="p-footer__name">
+                    <a href="/index.html" class="p-footer__name-a">
+                        <div class="p-footer__name-logo">
+                            <img src="../assets/images/common/logo-only.png" alt="会社ロゴ">
+                        </div><!-- /.p-footer__name-logo -->
+                    </a>
+
+                    <div class="p-footer__name-company">田原マネジメントコンサルティング</div>
+                    <div class="p-footer__name-director">
+                        <span>代表</span>田原 公生
+                    </div>
+
+                </div><!-- /.p-footer__name -->
+
+                <div class="p-footer__address">
+                    <p>〒806-0055</p>
+                    <p>北九州市八幡西区幸神4丁目7-10</p>
+                </div><!-- /.p-footer__address -->
+                <div class="p-footer__sale">
+                    <div class="p-footer__sale-content">
+                        <p>営業時間</p>
+                        <p>月〜金 → 9:00〜17:00</p>
+                    </div><!-- /.p-footer__sale-content -->
+                    <div class="p-footer__sale-contact">
+                        <a href="/page-contact.html"><img src="../assets/images/common/logo-mail-black.png" alt=""></a>
+                        <div class="p-footer__sale-contact-text">お問合わせする</div>
+                    </div><!-- /.p-footer__sale-contact -->
+                </div><!-- /.p-footer__sale -->
+
+            </div><!-- /.p-footer__about -->
+
+            <!-- フッターナビ -->
+            <nav class="p-footer__nav p-footer-nav">
+
+                <ul class="p-footer-nav__items">
+
+                    <!-- １つ目（事業案内） -->
+                    <li class="p-footer-nav__item"><a href="/page-business.html" class="footer-nav-icon-square">事業案内</a>
+                        <ul class="p-footer-nav__item-smalls">
+
+                            <li class="p-footer-nav__item-small">
+                                <a href="/page-business-succession.html" class="footer-nav-icon-line">事業承継支援</a>
+                                <ul>
+                                    <li><a href="/page-business-ma.html" class="footer-nav-icon-point">事業承継支援（M&A）</a></li>
+                                </ul>
+                            </li><!-- /.p-footer-nav__item-small -->
+
+                            <li class="p-footer-nav__item-small">
+                                <a href="/page-business-management.html" class="footer-nav-icon-line">経営支援</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <!-- ２つ目（事務所について） -->
+                    <li class="p-footer-nav__item"><a href="/page-about.html" class="footer-nav-icon-square">事務所について</a>
+                        <ul>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-hello"
+                                    class="footer-nav-icon-line">代表者紹介</a></li>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#p-page-about-outline"
+                                    class="footer-nav-icon-line">事務所概要</a></li>
+                            <li class="p-footer-nav__item-small"><a href="/page-about.html#page-about-access"
+                                    class="footer-nav-icon-line">アクセス</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ３つ目以降 -->
+                    <li class="p-footer-nav__item">
+                        <ul>
+                            <li class="p-footer-nav__item"><a href="/archive-home-news.html"
+                                    class="footer-nav-icon-square">お知らせ</a></li>
+                            <li class="p-footer-nav__item"><a href="/page-contact.html"
+                                    class="footer-nav-icon-square">お問合せ</a></li>
+                            <li class="p-footer-nav__item"><a href="/page-privacy.html"
+                                    class="footer-nav-icon-square">個人情報保護方針</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav><!-- /.p-footer--nav -->
+
+
+        </div><!-- /.p-footer__inner -->
+
+        <div class="p-footer__copyright">
+            <small>&copy; 2023 Tahara Management Consulting</small>
+        </div><!-- /.p-footer__copyright -->
+
+    </footer>
+</body>
+
+</html>

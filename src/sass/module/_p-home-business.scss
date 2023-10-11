@@ -1,0 +1,48 @@
+@use 'global' as *;
+
+.p-home-business {
+
+}
+
+.p-home-business__contents {
+    margin-top: rem(30);
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem(60);
+    }
+}
+
+/* 背景画像 */
+/* １つ目（事業承継） */
+.p-home-business__content:first-of-type .p-back-img-card {
+    background-image: url(../images/common/top-business1.jpg);
+}
+/* 2つ目（ma） */
+.p-home-business__content:nth-of-type(2) .p-back-img-card {
+    background-image: url(../images/common/top-business3-ma.png);
+}
+
+/* 3つ目（経営支援） */
+.p-home-business__content:last-of-type .p-back-img-card {
+    background-image: url(../images/common/top-business2.jpg);
+}
+
+.p-home-business__content:not(:first-of-type) {
+    margin-top: rem(50);
+
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
+
+.p-home-business__btn {
+    text-align: center;
+    margin-top: rem(40);
+
+    @include mq(md) {
+        margin-top: rem(60);
+    }
+}
+

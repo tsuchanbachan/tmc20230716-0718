@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.l-page-business-ma-flow {
+  margin-top: rem(100);
+  
+    @include mq(md) {
+      margin-top: rem(140);
+    }
+}
+
+/* イメージ図 */
+.p-page-business-ma-flow__content-image {
+  
+  margin: rem(60) auto 0;
+
+  /* 768/1100=69.81818%  */
+  // width: 69.81818%;
+
+  /* スマホでは100％、
+  PC時は90%、最大800px→maxつけなくても、親幅にmaxついてる */
+  // width: 90%;
+
+  @include mq(md) {
+    width: 90%;
+  }
+
+}

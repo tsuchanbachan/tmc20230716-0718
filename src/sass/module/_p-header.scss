@@ -1,0 +1,64 @@
+@use 'global' as *;
+
+/* メインビューは含まないが、
+ロゴ付きのヘッダー、スマホのドロワーメニューまでを含む。
+z-index:1000 */
+.p-header {
+    height: rem(60);
+    background-color: $white;
+    z-index: 1000;
+
+    /* ヘッダーの固定 */
+    position: fixed;
+    width: 100%;
+    /* jsでヘッダー分下げた時、指定してないと一緒に下がってしまう */
+    top: 0;
+
+    @include mq(md) {
+        height: rem(80);
+    }
+}
+
+.p-header__inner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem(15);
+}
+
+/* PC時はハンバーガーボタン非表示 */
+.p-header__drawer {
+    @include mq(md) {
+        display: none;
+    }
+}
+
+/* PC用ナビ */
+.p-header__pc-nav {
+    height: inherit;
+    display: none;
+
+    @include mq(md) {
+        display: block;
+    }
+}
+
+/* ロゴ */
+.p-header__logo {
+    width: rem(280);
+    // font-size: rem(18);
+
+    /* 縦方向の中央 */
+    display: block;
+
+    @include mq(md) {
+        width: 100%;
+        max-width: rem(450);
+    }
+}
+
+.p-header__logo:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,27 @@
+@use 'global' as *;
+
+.l-page-business-management-head__text {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(20);
+  }
+}
+
+.l-page-business-management-service {
+  margin-top: rem(110);
+
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+.l-page-business-management-price {
+  margin-top: rem(110);
+
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+
+/* 経営支援サービスの余白はちょっと違うので・・・ */

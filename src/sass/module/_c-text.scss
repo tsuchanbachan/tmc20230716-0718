@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.c-text {
+    letter-spacing: 0.1em;
+    /* １行目のみ字下げ */
+    text-indent: 1em;
+}
+
+.c-text p:not(:first-of-type) {
+    margin-top: rem(24);
+}
+
+/* 箇条書きなどで２行目以降は下げる */
+.c-text-indent {
+    padding-left: 1em;
+    text-indent: -1em;
+}

@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-page-business-succession-ma {
+    margin-top: rem(100);
+    
+      @include mq(md) {
+        margin-top: rem(140);
+      }
+}

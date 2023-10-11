@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-home-business {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}

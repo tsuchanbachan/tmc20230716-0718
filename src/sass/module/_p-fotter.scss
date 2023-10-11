@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.p-footer {
+    background-color: rgba(30, 146, 68, 0.09);
+    padding-top: rem(60);
+    color: $black;
+}
+
+.p-footer__inner {
+    padding: 0 rem(30);
+    margin: auto;
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-footer__name-a:hover {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.p-footer__copyright {
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    text-align: center;
+    margin-top: rem(40);
+    // background-color: $green;
+    background: transparent linear-gradient(90deg, #00241c 0%, $green 100%) 0% 0% no-repeat padding-box;
+    color: $white;
+    font-family: $font-english;
+    font-size: rem(10);
+    font-weight: $normal;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}

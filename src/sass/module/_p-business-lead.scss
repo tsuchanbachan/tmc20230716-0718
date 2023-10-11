@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.p-business-lead {
+    font-size: rem(26);
+    letter-spacing: 0.1em;
+    font-weight: $bold;
+
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}

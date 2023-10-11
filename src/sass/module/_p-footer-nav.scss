@@ -1,0 +1,106 @@
+@use 'global' as *;
+
+.p-footer-nav {
+    padding-top: rem(50);
+    width: 100%;
+
+    @include mq(md) {
+        padding-top: 0;
+        width: rem(222) * 3 + rem(20) * 2;
+        position: relative;
+
+    }
+
+}
+
+.p-footer-nav__items {
+    display: flex;
+    flex-flow: column;
+    gap: rem(20);
+
+    @include mq(md) {
+        flex-flow: row nowrap;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+
+    }
+}
+
+.p-footer-nav__item {
+
+    @include mq(md) {
+        // width: 33%;
+        width: rem(222);
+        
+    }
+}
+.p-footer-nav__item a {
+    // font-size: rem(12);
+    // font-weight: $bold;
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+
+}
+
+.p-footer-nav__item a:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+/* 大分類の四角マーク用の左余白 */
+.footer-nav-icon-square {
+    position: relative;
+    padding-left: rem(16);
+}
+
+/* 大分類の四角マーク */
+.footer-nav-icon-square::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(10);
+    height: rem(10);
+    background-color: $black;
+}
+
+/* 小分類の横棒マーク（M&A） */
+.footer-nav-icon-line {
+    position: relative;
+    padding-left: rem(32);
+}
+.footer-nav-icon-line:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: rem(10);
+    height: rem(1);
+    background-color: $black;
+    margin-left: rem(16);
+}
+
+/* 最小分類の点マーク */
+.footer-nav-icon-point {
+    position: relative;
+    padding-left: rem(48);
+}
+.footer-nav-icon-point::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: rem(6);
+    transform: translateY(-50%);
+    width: rem(4);
+    height: rem(4);
+    background-color: $black;
+    margin-left: rem(32);
+}

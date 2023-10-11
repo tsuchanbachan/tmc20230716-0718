@@ -1,0 +1,39 @@
+@use 'global' as *;
+
+.p-lower-header-title {
+    text-align: center;
+    color: $black;
+    width: 100%;
+}
+
+.p-lower-header-title__ja-title {
+    font-size: rem(32);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-weight: $bold;
+    
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.p-lower-header-title__ja-sub {
+    font-size: rem(20);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+
+    @include mq(sm) {
+        font-size: rem(30);
+    }
+}
+
+.p-lower-header-title__en-title {
+    font-size: rem(12);
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    font-family: $font-english;
+    
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}

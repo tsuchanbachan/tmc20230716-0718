@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.l-home-hello {
+
+    /* marginの基準値が不明なため、適当に設定 */
+    margin-top: rem(60) + rem(80);
+
+    @include mq(md) {
+        margin-top: rem(105) + rem(100);
+    }
+}

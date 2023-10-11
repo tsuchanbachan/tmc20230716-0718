@@ -1,0 +1,66 @@
+@use 'global' as *;
+
+.p-business-table-ma-sample {
+    /* 二重線を一本線に */
+    border-collapse: collapse;
+    font-size: rem(12);
+}
+
+
+/* 奇数行への指定 */
+.p-business-table-ma-sample tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+/* １行目（タイトル行） */
+.p-business-table-ma-sample tr:first-of-type {
+    background-color: $green;
+    color: $white;
+}
+
+.p-business-table-ma-sample th,
+td {
+    /* 境界線 */
+    border: 1px solid $green;
+    /* セル内余白 */
+    padding: rem(8);
+    letter-spacing: 0.05em;
+}
+.p-business-table-ma-sample th {
+    font-weight: $normal;
+}
+
+// .p-business-table td {
+//     /* セル内の縦方向配置 */
+//     vertical-align: top;
+// }
+
+/* 幅 */
+/* 譲渡側 */
+.p-business-table-ma-sample .td.row1 {
+    width: 14%;
+}
+/* 地域 */
+.p-business-table-ma-sample .td.row2 {
+    width: 14%;
+    text-align: center;
+}
+/* 年商 */
+.p-business-table-ma-sample .td.row3 {
+    width: 12%;
+    text-align: right;
+}
+/* 譲受側 */
+.p-business-table-ma-sample .td.row4 {
+    width: 14%;
+    text-align: center;
+}
+/* 譲渡金額 */
+.p-business-table-ma-sample .td.row5 {
+    width: 12%;
+    text-align: right;
+}
+/* コメント */
+.p-business-table-ma-sample .td.row6 {
+    width: 34%;
+}

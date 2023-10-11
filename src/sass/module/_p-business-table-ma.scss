@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.p-business-table-ma {
+    /* 二重線を一本線に */
+    border-collapse: collapse;
+    font-size: rem(12);
+    width: 100%;
+}
+
+
+/* 奇数行への指定 */
+.p-business-table-ma tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+/* １行目（タイトル行） */
+.p-business-table-ma tr:first-of-type {
+    background-color: $green;
+    color: $white;
+
+}
+
+.p-business-table-ma th,
+td {
+    /* 境界線 */
+    border: 1px solid $green;
+    /* セル内余白 */
+    padding: rem(8);
+    letter-spacing: 0.05em;
+}
+.p-business-table-ma th {
+    font-weight: $normal;
+}
+
+// .p-business-table td {
+//     /* セル内の縦方向配置 */
+//     vertical-align: top;
+// }
+
+/* 幅 */
+.p-business-table-ma .row1 {
+    /* 200/335=59.70149 */
+    width: 59.70149%;
+}
+
+.p-business-table-ma .row2 {
+    /* 135/335=40.2985% */
+    width: 40.2985%;
+    text-align: center;
+}

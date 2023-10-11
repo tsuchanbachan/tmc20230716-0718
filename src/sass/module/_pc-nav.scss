@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+.pc-nav {}
+
+.pc-nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.pc-nav__item,
+.pc-nav__item a {
+    height: inherit;
+}
+
+/* ナビ下線用（該当spanに「active」をつけること） */
+.pc-nav__item span {
+    position: relative;
+}
+.pc-nav__item .active::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-10);
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    border-radius: rem(5);
+    background-color: $green;
+}
+
+
+
+.pc-nav__item a {
+    display: flex;
+    align-items: center;
+    color: $black;
+    font-size: rem(16);
+    font-family: serif;
+    font-family: $font-english;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    /* ナビ間の余白は25 */
+    padding-left: rem(13);
+    padding-right: rem(12);
+}
+
+.pc-nav__item:last-child a {
+    padding-right: 0;
+}
+
+.pc-nav__item:first-child a {
+    padding-left: 0;
+}
+
+.pc-nav__item a:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+/* 「事業案内」のトグルボタン */
+/* 「.pc-nav__item」を付けないと「.nav-toggle」では効かない */
+.pc-nav__item .nav-toggle__item-a {
+    color: $white;
+    /* トグルボタンの中のテキストがセンタリングするのを解除 */
+    justify-content: start;
+}
+
+.pc-nav__item .nav-toggle__item-a:hover {
+    color: $green;
+    opacity: 1;
+}
+
+.pc-nav__item .nav-toggle__item-a.active {
+    color: $green;
+    opacity: 1;
+}
+
+/* liの中のa、右矢印 */
+/* hover時に緑にしたいが、効いてない */
+// .pc-nav__item .nav-toggle__item a::before:hover {
+//     border-top: 2px solid $green;
+//     border-left: 2px solid $green;
+//     opacity: 1;
+// }

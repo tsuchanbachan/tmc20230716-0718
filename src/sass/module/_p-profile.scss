@@ -1,0 +1,71 @@
+@use 'global' as *;
+
+.p-profile {
+  @include mq(md) {
+    padding-left: rem(30);
+    line-height: 2;
+    border-left: solid 1px #EB6100;
+  }
+}
+
+.p-profile__title {
+  font-family: $font-english;
+  font-weight: $bold;
+  font-size: rem(22);
+}
+
+.p-profile__name {
+  margin-top: rem(20);
+  font-size: rem(24);
+}
+
+.p-profile__text {
+  margin-top: rem(20);
+}
+
+.p-profile__text {
+
+}
+
+.p-profile__text-basic {
+
+}
+
+.p-profile__row {
+  display: flex;
+}
+
+.p-profile__row dt {
+  width: 25%;
+  position: relative;
+  padding-left: rem(15);
+}
+.p-profile__row dt::before,
+.p-profile__text-history-title::before {
+  content: '';
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: rem(10);
+  height: rem(10);
+  background-color: $black;
+  position: absolute;
+}
+
+/* 経歴 */
+.p-profile__text-history {
+}
+
+.p-profile__text-history-title {
+  margin-top: rem(20);
+  position: relative;
+  padding-left: rem(15);
+}
+
+.p-profile__text-history-content dt:not(:first-of-type){
+  margin-top: rem(10);
+}
+
+.p-profile__text-history-content dd {
+  margin-left: 2em;
+}

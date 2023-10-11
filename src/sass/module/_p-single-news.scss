@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.p-single-news {
+
+}
+
+.p-single-news-body {
+
+}
+
+.p-single-news-body__title .p-section-header-lower__title {
+  line-height: 1.5;
+}
+
+.l-single-news-body__image {
+  margin-top: rem(50);
+  margin-bottom: rem(50);
+}
+
+/* 記事中の大見出し（h2） */
+.p-single-news-body__content-lead {
+  margin-top: rem(50);
+
+  @include mq(md) {
+    margin-top: rem(70);
+  }
+}
+
+/* 記事中の小見出し（h3） */
+.p-single-news-body__content-lead-small {
+  margin-top: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(50);
+  }
+}
+
+/* 記事の段落 */
+.p-single-news-body__content p {
+  margin-top: rem(15);
+}
+
+.p-single-news-body__pager {
+  margin-top: rem(30);
+
+  @include mq(sm) {
+    margin-top: rem(50);
+  }
+}
+

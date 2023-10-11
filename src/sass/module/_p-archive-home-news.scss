@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.l-archive-home-news__contents {
+  /* 全部で70-margin-bottomの30 */
+  margin-top: rem(40);
+}
+
+/* 隣接した次の.p-news-itemは40マージン */
+.p-archive-home-news__item+.p-archive-home-news__item {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(15);
+  }
+}

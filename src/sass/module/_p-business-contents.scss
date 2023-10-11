@@ -1,0 +1,85 @@
+@use 'global' as *;
+
+/* 事業案内（事業承継ページ） */
+/* h2全体（セクション）を囲む */
+
+.p-business-contents {
+
+}
+.p-business-contents__inner {
+
+}
+
+.p-business-contents__text {
+
+}
+
+.p-business-contents__text a {
+    color: blue;
+    border-bottom: solid 1px blue;
+}
+.p-business-contents__text a:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+/* h3含んで覆う */
+.p-business-contents__items {
+  margin-top: rem(80);
+
+  @include mq(md) {
+    margin-top: rem(120);
+  }
+}
+/* margin-topが広すぎる箇所の調整用 */
+.p-business-contents__items.direct {
+  margin-top: 0;
+}
+
+/* h3より下のかたまり */
+.p-business-contents__items-inner {
+
+}
+
+/* h4を含むいくつかのアイテムを囲むwrapperの上の説明文 */
+.p-business-contents__items-introduction {
+  margin-top: rem(10);
+}
+
+/* h4を含むいくつかのアイテムを囲むwrapper */
+.p-business-contents__items-wrapper {
+    margin-top: rem(30);
+}
+
+/* h4を含む１つのアイテム */
+.p-business-contents__item {
+  margin-top: rem(60);
+
+  @include mq(sm) {
+    margin-top: rem(90);
+  }
+}
+/* margin-topが広すぎる箇所の調整用 */
+/* 打ち消しになっている・・・ */
+.p-business-contents__item.direct {
+  margin-top: 0;
+}
+
+.p-business-contents__item-title {
+
+}
+
+/* 各h4タイトルと本文の間の余白 */
+.p-business-contents__item-text {
+  margin-top: rem(10);
+}
+
+.p-business-contents__item-text a {
+    color: blue;
+    border-bottom: solid 1px blue;
+}
+
+.p-business-contents__item-text a:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}

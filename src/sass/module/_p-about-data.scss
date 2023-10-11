@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+/* 事務所について、概要一覧 */
+
+.p-about-data {
+  font-size: rem(14);
+
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    font-size: rem(16);
+  }
+}
+
+.p-about-data__left {
+
+  @include mq(md) {
+    border-bottom: solid 1px $green;
+    /* 525/1100=47.72727% */
+    width: 47.72727%;
+  }
+}
+
+.p-about-data__right {
+  border-bottom: solid 1px $green;
+
+  @include mq(md) {
+      /* 525/1100=47.72727% */
+      width: 47.72727%;
+    }
+}
+
+.p-about-data__row {
+  display: flex;
+  /* align-itemsはにつける */
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(14);
+  padding-bottom: rem(14);
+  border-top: solid 1px $green;
+}
+
+.p-about-data__row dd {
+  /* 61/335=18.20895% */
+  width: 18.20895%;
+
+}
+.p-about-data__row dt {
+  /* 261/335=77.910447% */
+  width: 77.910447%;
+}

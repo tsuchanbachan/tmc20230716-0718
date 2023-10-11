@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+/* MA支援ページ */
+
+/* 最後のまとめの余白 */
+.p-business-contents__item-summary {
+    padding-top: rem(50);
+}
+
+/* セクション２（料金） */
+.p-page-business-ma-price {
+    margin-top: rem(100);
+
+    @include mq(md) {
+        margin-top: rem(140);
+    }
+}

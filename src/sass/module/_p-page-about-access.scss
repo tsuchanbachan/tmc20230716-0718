@@ -1,0 +1,44 @@
+@use 'global' as *;
+
+.l-page-about-access {
+  margin-top: rem(130);
+}
+
+.p-page-about-access {
+
+}
+
+.p-page-about-access__map {
+
+}
+
+.p-page-about-access__routes {
+  margin-top: rem(50);
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-page-about-access__route {
+
+  @include mq(md) {
+    /* 228+100+26=354 354/1100=32.181818% */
+    /* 
+    228+100+26=354、予備に+40=394
+    ここは、インナー幅900にしてるので、
+    354/900=39.333333%
+    394/900=43.777777 */
+    width: 43.777777%;
+  }
+  
+}
+
+.p-page-about-access__route:last-of-type {
+  margin-top: rem(16);
+  
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

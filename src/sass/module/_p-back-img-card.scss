@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+/* 画像をbackgroundに置いてマスクをかける */
+.p-back-img-card {
+  /* 各画像は、別で */
+  background-size: cover;
+  /* 背景画像の高さの確保 */
+  // padding: rem(100) rem(200);
+  position: relative;
+  padding-top: 59.7014925%;
+
+  @include mq(md) {
+    // padding-top: 50%;
+    padding-top: 60%;
+  }
+
+}
+
+/* 背景画像にフィルターをかける */
+.p-back-img-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* 半透明のフィルター（「1」で不可視 */
+  background-color: rgba(255,255,255,0.8);
+  border: solid 1px #cccccc;
+}

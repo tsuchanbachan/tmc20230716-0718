@@ -1,0 +1,80 @@
+@use 'global' as *;
+
+.p-footer-about {
+    padding-bottom: rem(50);
+    border-bottom: solid rem(1) $black;
+
+    @include mq(md) {
+        width: 29%;
+        border-bottom: none;
+    }
+}
+
+.p-footer__name {
+    text-align: center;
+
+}
+
+.p-footer__name-logo {
+    width: rem(60);
+    /* ロゴセンタリングするために入れたが、いいの？ */
+    display: inline-block;
+
+}
+
+.p-footer__name-company {
+    font-size: rem(18);
+    margin-top: rem(10);
+
+    @include mq(md) {
+    }
+}
+
+.p-footer__name-director {
+    font-size: rem(16);
+    margin-top: rem(8);
+}
+
+.p-footer__name-director span {
+    margin-right: rem(16);
+}
+
+.p-footer__address {
+    font-size: rem(14);
+    margin-top: rem(56);
+}
+
+.p-footer__sale {
+    font-size: rem(14);
+    margin-top: rem(10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-footer__sale-content {
+}
+.p-footer__sale-contact {
+    // width: rem(50);
+    width: rem(120);
+    text-align: center;
+}
+
+.p-footer__sale-contact a {
+    display: block;
+    width: rem(40);
+    margin-left: auto;
+    margin-right: auto;
+}
+.p-footer__sale-contact:hover {
+    opacity: 0.3;
+    cursor: pointer;
+
+}
+.p-footer__sale-contact a:hover{
+}
+
+.p-footer__sale-contact-text {
+    width: inherit;
+    margin-top: rem(10);
+    font-size: rem(10);
+}

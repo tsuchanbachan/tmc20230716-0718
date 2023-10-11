@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-page-about-hello {
+
+  @include mq(md) {
+    /* 120のうち、パンくずで68 */
+    margin-top: rem(52);
+  }
+}

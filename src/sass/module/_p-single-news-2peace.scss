@@ -1,0 +1,30 @@
+@use 'global' as *;
+
+/* お知らせコンテンツ内の横並び画像 */
+.l-single-news-2peace {
+  margin-top: rem(20);
+}
+
+/* お知らせコンテンツの下画像横並び */
+.p-single-news-2peace {
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* 各画像 */
+.p-single-news-2peace__img {
+  @include mq(md) {
+    width: 45%;
+  }
+}
+
+.p-single-news-2peace__img:not(:first-of-type) {
+  margin-top: rem(20);
+
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

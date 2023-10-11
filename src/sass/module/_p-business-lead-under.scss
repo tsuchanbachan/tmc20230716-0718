@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.p-business-lead-under {
+
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-business-lead-under__img {
+
+  @include mq(md) {
+    width: rem(400);
+    
+  }
+}

@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+/* ------------
+テキストで幅が変動するボタン（paddingで調整）
+-------------*/
+.p-main__btn {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.c-button {
+    /* やっぱりこれ入ってる！ */
+    display: inline-block;
+    font-size: rem(14);
+    font-weight: normal;
+    color: $white;
+    /* 幅は、widthではなく、inline-blockとpaddingで決める */
+    padding: rem(21) rem(70);
+    text-decoration: none;
+    // border: 1px solid white;
+    line-height: 1;
+
+    /* 50÷3？？ */
+    letter-spacing: 0.05em;
+    // font-family: "";
+    border-radius: 50px;
+    // background: transparent linear-gradient(90deg, #7633A4 0%, #250D65 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #00241c 0%, $green 100%) 0% 0% no-repeat padding-box;
+
+    position: relative;
+}
+
+/* 擬似要素で「→」。参照：https://mukolog.com/post-1594/ */
+.c-button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    margin-top: -2px;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+}
+
+.c-button:hover {
+    /* 透過 */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
